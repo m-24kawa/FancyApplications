@@ -34,6 +34,8 @@ a {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   vertical-align: bottom;
 }
 
@@ -68,21 +70,21 @@ header {
 
 /* hero */
 .hero {
-  padding: 32px 32px 16px;
+  padding: 16px;
 
   background-color: #99e6ff;
   background-position: center bottom;
   text-align: center;
 }
 .hero2 {
-  padding: 32px 32px 16px;
+  padding: 16px;
 
   background-color: #99ffd576;
   background-position: center bottom;
   text-align: center;
 }
 .hero3 {
-  padding: 32px 32px 16px;
+  padding: 16px;
 
   background-color: #e9c0f5ae;
   background-position: center bottom;
@@ -97,7 +99,7 @@ header {
   margin: 32px auto 0;
 }
 .hero .pic, .hero2 .pic, .hero3 .pic {
-  padding: 64px;
+  padding: 32px;
 }
 
   
@@ -121,10 +123,15 @@ header {
   .container {
     display: flex;
     justify-content: space-between;
-    gap: 64px;
+    gap: 32px;
     align-items: center;
   }
-    
+
+  .hero .pic,.hero2 .pic, .hero3 .pic {
+    width : 40%;
+    height :auto;
+  }
+
   .hero2 pic {
     order: -1;
   }
